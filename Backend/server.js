@@ -20,6 +20,14 @@ import mongoose from "mongoose";
 // import fetch from "node-fetch";
 import chatRoutes from "./routes/chat.js";
 
+const cors = require("cors");
+
+app.use(cors({
+  origin: "https://sigma-gpt-three.vercel.app"  // <-- Vercel frontend URL
+}));
+app.use(cors());
+
+
 const app=express();
 const port=8000;
 
