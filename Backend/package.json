@@ -11,5 +11,9 @@
     "node-fetch": "^3.3.2",
     "nodemon": "^3.1.10",
     "openai": "^5.9.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   }
 }
